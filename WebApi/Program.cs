@@ -9,6 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ITextService, TextService>();
+builder.Services.AddScoped<IMathService, MathService>();
 
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
