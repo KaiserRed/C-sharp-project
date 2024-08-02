@@ -5,7 +5,7 @@ using ClassLibrary;
 using Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace YourTestProject
+namespace TextTest
 {
     public class TextControllerTests
     {
