@@ -18,6 +18,11 @@ namespace ClassLibrary
         }
         public double Division(double a, double b)
         {
+            if (b == 0)
+            {
+                throw new DivideByZeroException("Division by zero is prohibited");
+            }
+            
             return a / b;
         }
         public double Pow(double a, double b)
