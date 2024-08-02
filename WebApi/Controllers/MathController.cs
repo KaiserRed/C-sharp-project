@@ -15,28 +15,28 @@ namespace WebApi.Controllers
             _mathService = msvc;
         }
 
-        [HttpGet("Sum")]
+        [HttpGet("sum")]
         public IActionResult Sum(double a, double b)
         {
             return Ok(_mathService.Sum(a, b));
         }
 
-        [HttpGet("Substraction")]
+        [HttpGet("substraction")]
         public IActionResult Substracion(double a, double b)
         {
             return Ok(_mathService.Substracion(a, b));
         }
-        [HttpGet("Multiplication")]        
+        [HttpGet("multiplication")]        
         public IActionResult Multiplication(double a, double b)
         {
             return Ok(_mathService.Multiplication(a, b));
         }
-        [HttpGet("Division")]
+        [HttpGet("division")]
         public IActionResult Division(double a, double b)
         {
             return Ok(_mathService.Division(a, b));
         }
-        [HttpGet("Pow")]
+        [HttpGet("pow")]
         public IActionResult Pow(double a, double b)
         {
             return Ok(_mathService.Pow(a, b));
