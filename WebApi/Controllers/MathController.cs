@@ -34,7 +34,14 @@ namespace WebApi.Controllers
         [HttpGet("division")]
         public IActionResult Division(double a, double b)
         {
-            return Ok(_mathService.Division(a, b));
+            try
+            {
+                return Ok(_mathService.Division(a, b));
+            }
+            catch (DivideByZeroException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
         [HttpGet("pow")]
         public IActionResult Pow(double a, double b)
