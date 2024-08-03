@@ -73,8 +73,8 @@ namespace MathTest
             var a = 0;
             var b = 13;
             var expectedOutput = -13;
-            _mathServiceMock.Setup(service => service.Substracion(a, b)).Returns(a - b);
-            var result = _mathController.Substracion(a, b) as OkObjectResult;
+            _mathServiceMock.Setup(service => service.Subtraction(a, b)).Returns(a - b);
+            var result = _mathController.Subtraction(a, b) as OkObjectResult;
 
             Assert.That(result.Value, Is.EqualTo(expectedOutput));
         }
@@ -85,8 +85,8 @@ namespace MathTest
             var a = 901.5;
             var b = 900.25;
             var expectedOutput = 1.25;
-            _mathServiceMock.Setup(service => service.Substracion(a, b)).Returns(a - b);
-            var result = _mathController.Substracion(a, b) as OkObjectResult;
+            _mathServiceMock.Setup(service => service.Subtraction(a, b)).Returns(a - b);
+            var result = _mathController.Subtraction(a, b) as OkObjectResult;
 
             Assert.That(result.Value, Is.EqualTo(expectedOutput));
         }

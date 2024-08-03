@@ -22,9 +22,9 @@ namespace WebApi.Controllers
         }
 
         [HttpGet("substraction")]
-        public IActionResult Substracion(double a, double b)
+        public IActionResult Subtraction(double a, double b)
         {
-            return Ok(_mathService.Substracion(a, b));
+            return Ok(_mathService.Subtraction(a, b));
         }
         [HttpGet("multiplication")]        
         public IActionResult Multiplication(double a, double b)

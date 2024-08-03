@@ -8,7 +8,7 @@ namespace ClassLibrary
         {
             return a + b;
         } 
-        public double Substracion(double a, double b)
+        public double Subtraction(double a, double b)
         {
             return a - b;
         }
